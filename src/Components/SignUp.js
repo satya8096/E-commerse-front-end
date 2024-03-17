@@ -50,7 +50,7 @@ export default function SignUp() {
       return Errshow("Password and ConfirmPassword Do Not Match !");
     }
      const data = await fetch(
-       "http://localhost:4000/shopykit/api/v1/user-details"
+       "https://shopykit-back-end.onrender.com/shopykit/api/v1/user-details"
      );
      const response = await data.json();
      const getUser = await response.filter((each) => {
